@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+body {
+    font-family: "Manrope", sans-serif;
+    color: #181818;
+    background-color: #F1F1F1;
+}
+
+/* header */
+
+.header__logo {
+    font-size: 1.25rem;
+    font-weight: 800;
+    line-height: 110%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.container {
+    width: 1539px;
+    margin: auto;
+}
+
+.nav {
+    height: 7.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav__links {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+
+}
+
+.nav__links li {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 120.89%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.nav__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 120.89%;
+    text-align: center;
+    background-color: white;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    border-radius: 3.13rem;
+}
+
+.nav__button div {
+    background: #181818;
+    width: 2.31rem;
+    height: 2.31rem;
+    border-radius: 50%;
+}
+
+/* main */
+
+.hero .container {}
+
+.hero__title {
+    font-size: 5.38rem;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.hero__img {
+    height: 55rem;
+
+}
+
+.hero__img img {
+    width: 100%;
+    height: 100%;
+}
+
+/* block1 */
+
+.title {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.button__gray {
+    box-sizing: border-box;
+    border: 0.13rem solid rgb(206, 206, 206);
+    border-radius: 3.13rem;
+    background: rgba(41, 41, 41, 0);
+    padding: 0.1rem 1rem;
+    font-size: 1.13rem;
+    font-weight: 600;
+    line-height: 1.56rem;
+    letter-spacing: 0%;
+    text-align: center;
+}

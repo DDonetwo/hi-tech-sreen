@@ -5,42 +5,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
     <title>HI-TECH SCREENS</title>
 </head>
 
 <body>
     <header class="header">
-        <nav class="container">
-            <ul>
-                <li><a href="">Samsung DC55E</a></li>
-                <li><a href="">Применение</a></li>
-                <li><a href="">FAQ</a></li>
-                <li><a href="">О нас</a></li>
-                <li class="header__logo">HI-TECH
-                    SCREENS</li>
-            </ul>
-        </nav>
-        <ul class="contact">
-            <li><a href="">sales@hi-tech.ru</a></li>
-            <li><a href="">8 800 1488 1337</a></li>
-            <li><a href="">связаться</a></li>
-        </ul>
+        <div class="container">
+            <nav class="nav">
+                <ul class="nav__links">
+                    <li><a href="">Samsung DC55E</a></li>
+                    <li><a href="">Применение</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">О нас</a></li>
+
+                </ul>
+                <a class="header__logo">
+
+                    HI-TECH <br>
+                    SCREENS</a>
+                <ul class="nav__links">
+                    <li><a href="">sales@hi-tech.ru</a></li>
+                    <li><a href="">8 800 1488 1337</a></li>
+                    <li><button class="nav__button">
+                            <span>связаться</span>
+                            <div><img src="" alt=""></div>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <section class="hero">
             <div class="container">
-                <h1>Профессиональные мониторы для бизнеса.</h1>
-                <div>
-                    <img src="" alt="">
+                <h1 class="hero__title">Профессиональные <br>
+                    мониторы для бизнеса.</h1>
+                <div class="hero__img">
+                    <img src="/Intersect.png" alt="">
                 </div>
             </div>
         </section>
 
         <section class="block1">
-            <h2>Высококачественные мониторы Samsung для коммерческого использования.</h2>
+            <div class="container">
+            <h2 class="title">Высококачественные мониторы Samsung для коммерческого использования.</h2>
             <div>
-                <button>узнать больше</button>
-                <button>стрелка</button>
+                <button class="button__gray">узнать больше</button>
+                <button class=""><img src="" alt=""></button>
             </div>
 
             <ul>
@@ -67,7 +79,7 @@
                     <h2>Легкая интеграция в любую среду.</h2>
                 </li>
             </ul>
-
+        </div>
         </section>
 
 
