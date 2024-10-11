@@ -63,6 +63,9 @@ body {
     width: 2.31rem;
     height: 2.31rem;
     border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* main */
@@ -91,10 +94,15 @@ body {
 
 .title {
     font-size: 3rem;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 130%;
     letter-spacing: 0%;
     text-align: center;
+}
+
+.button__blocks {
+    display: flex;
+    gap: 0.5rem;
 }
 
 .button__gray {
@@ -108,4 +116,273 @@ body {
     line-height: 1.56rem;
     letter-spacing: 0%;
     text-align: center;
+}
+
+.button__gray_circle {
+    width: 2.06rem;
+    height: 2.06rem;
+    border-radius: 50%;
+    border: 0.13rem solid rgb(206, 206, 206);
+    background: rgba(41, 41, 41, 0);
+    font-size: 1.13rem;
+    font-weight: 600;
+    line-height: 1.56rem;
+    letter-spacing: 0%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.advantage {
+    display: flex;
+    gap: 2rem;
+}
+
+.advantage_itembig {
+    width: 41rem;
+    height: 32.81rem;
+    background-image: url(./asset/advantage1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 3.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.advantage__title {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 4.13rem;
+    letter-spacing: 0%;
+    text-align: center;
+
+}
+
+.advantage_itembig p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.69rem;
+    letter-spacing: 0%;
+    text-align: center;
+    width: 25.38rem;
+}
+
+.advantage__button {
+    border-radius: 3.13rem;
+    background: rgba(240, 241, 242, 0.5);
+    padding: 0.7rem 1.2rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.69rem;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.advantage_item {
+    width: 26.63rem;
+    height: 31.5rem;
+    background-color: #FFFFFF;
+    border-radius: 3.75rem;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.advantage_item h2 {
+    font-size: 2.38rem;
+    font-weight: 700;
+    line-height: 2.25rem;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.advantage_item p {
+    font-size: 1.5rem;
+    color: rgb(124, 124, 124);
+    font-weight: 500;
+
+}
+
+.button__black {
+    border-radius: 3.13rem;
+    background: #181818;
+    color: #FFFFFF;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 0.6rem 1rem;
+}
+
+.advantage_item img {
+    width: 20.25rem;
+    height: 17.5rem;
+    border-radius: 3.75rem;
+}
+
+
+/* product */
+.gallery__img {
+    width: 56.25rem;
+    height: 36.06rem;
+    border-radius: 3.13rem;
+
+}
+
+.gallery__img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 3.13rem;
+}
+
+.gallery__text h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 4.13rem;
+    letter-spacing: 0%;
+
+}
+
+.gallery__text ul {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 115%;
+    letter-spacing: 0%;
+    color: rgb(124, 124, 124);
+}
+
+.product .gallery {
+    display: flex;
+    gap: 5rem;
+
+}
+
+.button__black-border {
+    border: 0.13rem solid #181818;
+    border-radius: 3.75rem;
+    color: #181818;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+}
+
+.gallery__text ul li b {
+    color: #181818;
+}
+
+.gallery__buttons button {
+    border: 0.13rem solid #181818;
+    border-radius: 50%;
+    color: #181818;
+    width: 5.63rem;
+    height: 5.63rem;
+}
+
+.gallery__buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+
+/* application */
+
+.gallery2 ul {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.gallery2__block_active {
+    width: 60%;
+    background-color: #FFFFFF;
+    border-radius: 3.13rem;
+    height: 36.25rem;
+    padding: 2.5rem;
+    display: flex;
+}
+
+.gallery2__block_active img {
+    width: 30%;
+    border-radius: 3.13rem;
+}
+
+.gallery2__block-text h2 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.gallery2__block-text p {
+    color: rgb(124, 124, 124);
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 115%;
+    letter-spacing: 0%;
+}
+
+.gallery2__block-text .gallery2__buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gallery2__block-text .gallery2__buttons div {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.69rem;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.gallery2__block-text .gallery2__buttons button {
+    width: 5.63rem;
+    height: 5.63rem;
+    border-radius: 50%;
+    background-color: #181818;
+}
+
+.gallery2__block {
+    background-color: #FFFFFF;
+    border-radius: 3.13rem;
+    width: 18%;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #181818;
+}
+
+.gallery2__block button {
+    border: 0.06rem solid rgb(255, 255, 255);
+    border-radius: 3.13rem;
+    background: rgba(41, 41, 41, 0);
+    color: rgb(255, 255, 255);
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.69rem;
+    letter-spacing: 0%;
+    text-align: center;
+    padding: 0.6rem 1rem;
+
+}
+
+.gallery2__block h2 {
+    color: rgb(255, 255, 255);
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 2.13rem;
+    letter-spacing: 0%;
+  }
+
+
+  
+.footer {
+    padding-top: 100rem;
+   
 }
