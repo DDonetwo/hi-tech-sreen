@@ -88,6 +88,10 @@ u {
     justify-content: center;
 }
 
+.button__menu {
+    display: none;
+}
+
 /* main */
 
 .hero {
@@ -879,4 +883,27 @@ form input {
     font-size: 1.13rem;
     font-weight: 400;
     color: rgb(160, 160, 160);
+}
+
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 12px;
+    }
+    .nav__links {
+        display: none;
+    }
+    .button__menu {
+        display: block;
+    }
+    .nav {
+        padding: 1rem 0rem;
+    }
+    .hero__title{
+        font-size: 1rem;
+    }
+    .container{
+        width: 100%;
+        padding: 0rem 2rem;
+    }
+   
 }
