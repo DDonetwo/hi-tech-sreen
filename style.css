@@ -16,12 +16,37 @@ u {
 
 /* header */
 
+.nav {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__links {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    flex: 2;
+
+}
+
 .header__logo {
     font-size: 1.25rem;
     font-weight: 800;
     line-height: 110%;
     letter-spacing: 0%;
     text-align: center;
+    flex-grow: 0;
+
+}
+
+.end {
+    justify-content: end;
+}
+
+.start {
+    justify-content: start;
 }
 
 .container {
@@ -29,20 +54,7 @@ u {
     margin: auto;
 }
 
-.nav {
-    padding: 2rem 0rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
-}
-
-.nav__links {
-    display: flex;
-    gap: 1.5rem;
-    align-items: center;
-
-}
 
 .nav__links li {
     font-size: 1.25rem;
@@ -145,7 +157,7 @@ u {
     right: 0;
     display: flex;
     align-items: center;
-    gap: 6rem;
+    gap: 4rem;
 }
 
 .hero__text-bottom p {
@@ -227,8 +239,9 @@ u {
     align-items: center;
     flex-direction: column;
     position: relative;
-    padding: 5rem 2rem 2rem 2rem;
+    padding: 5rem 4rem 2rem 4rem;
 }
+
 
 .button__circle {
     box-sizing: border-box;
@@ -255,11 +268,19 @@ u {
 }
 
 .advantage_itembig-text {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+    display: inline-flex;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(0.1rem);
+    padding: 2rem 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.69rem;
+    border-radius: 3.13rem;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .advantage__title span {}
@@ -275,7 +296,8 @@ u {
 
 .advantage__button {
     border-radius: 3.13rem;
-    background: rgba(240, 241, 242, 0.5);
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(0.1rem);
     padding: 0.7rem 1.2rem;
     font-size: 1.25rem;
     font-weight: 600;
@@ -331,6 +353,20 @@ u {
     font-size: 1.25rem;
     font-weight: 400;
     padding: 0.6rem 2rem;
+}
+
+.button__circle-black {
+    border-radius: 50%;
+    background: #181818;
+    width: 3.13rem;
+    height: 3.13rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.button__circle-black img {
+    width: 1rem;
 }
 
 .advantage_item img {
@@ -393,7 +429,7 @@ u {
 
 }
 
-.gallery__text button{
+.gallery__text button {
     margin-top: 10rem;
 }
 
@@ -427,9 +463,7 @@ u {
     color: #181818;
 }
 
-.gallery__buttons button {
-    
-}
+.gallery__buttons button {}
 
 .gallery__buttons {
     width: 56.25rem;
@@ -549,6 +583,44 @@ u {
     background-repeat: no-repeat;
 }
 
+.img-1,
+.img-2 {
+    position: relative;
+    /* Устанавливаем относительное позиционирование для родителя */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 3.13rem;
+    overflow: hidden;
+    /* Обрезаем содержимое, выходящее за границы */
+}
+
+/* Затемнение с использованием псевдоэлемента */
+.img-1::before,
+.img-2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Полупрозрачный черный цвет, можно регулировать интенсивность */
+    border-radius: 3.13rem;
+    z-index: 1;
+    /* Устанавливаем индекс слоя выше фона */
+}
+
+/* Дополнительно стили для текста и кнопок, чтобы они были над затемнением */
+.img-1 button,
+.img-1 h2,
+.img-2 button,
+.img-2 h2 {
+    position: relative;
+    z-index: 2;
+    /* Поднимаем над затемнением */
+}
+
 .gallery2__buttons button img {
     width: 1.3rem;
 }
@@ -598,17 +670,26 @@ u {
     justify-content: space-between;
     padding-top: 6rem;
     align-items: center;
+    gap: 3rem;
 }
 
 .gallery3__block {
     display: flex;
     align-items: center;
     gap: 4rem;
+    border: none;
+    outline: 0.19rem solid rgb(124, 124, 124);
+    outline-offset: -0.19rem;
+    border-top-right-radius: 3.75rem;
+    border-bottom-right-radius: 3.75rem;
+    border-top-left-radius: 25rem;
+    border-bottom-left-radius: 20rem;
 }
 
 .gallery__block img {
     width: 48.25rem;
     height: 36.94rem;
+
 }
 
 .gallery3__text {
@@ -617,7 +698,17 @@ u {
     justify-content: space-between;
     height: 100%;
     height: 36.94rem;
-    padding: 3rem
+    padding: 5rem 5rem 3rem 0rem;
+
+
+}
+
+.gallery3 img {
+    z-index: 10;
+}
+
+.gallery3__text button {
+    width: 50%;
 }
 
 .gallery3__text p {
@@ -734,9 +825,11 @@ u {
     height: 29.63rem;
     display: flex;
 }
+
 .bg__white p {
     padding-bottom: 2rem;
 }
+
 .footer {
     padding-top: 17rem;
 }
