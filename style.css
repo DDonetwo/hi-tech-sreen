@@ -889,21 +889,29 @@ form input {
     html {
         font-size: 12px;
     }
+
     .nav__links {
         display: none;
     }
+
     .button__menu {
         display: block;
     }
+
     .nav {
         padding: 1rem 0rem;
     }
-    .hero__title{
-        font-size: 1rem;
-    }
-    .container{
+
+    .container {
         width: 100%;
         padding: 0rem 2rem;
     }
-   
+
+    .hero__title {
+        font-size: 3.2rem;
+    }
+    .hero__relative div{
+        font-size: 0.8rem;
+    }
+
 }
