@@ -940,7 +940,7 @@ form input {
 
     .list_3 {
         bottom: 6.5rem;
-        left: 33rem;
+        left: 23rem;
     }
 
     .hero {
@@ -1226,7 +1226,8 @@ form input {
         height: 5rem;
     }
     .privacy{
-        color: rgb(124, 124, 124);
+        font-size: 1.13rem;
+        color: rgb(160, 160, 160);
         width: 45%;  
     }
     .send {
@@ -1237,5 +1238,11 @@ form input {
     }
     .send button{
         width: 45%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    html {
+        font-size: 9px;
     }
 }
