@@ -911,7 +911,6 @@ form input {
 }
 
 .send {
-    padding-top: 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -948,7 +947,7 @@ form input {
     .gallery__text {
         width: 48%;
     }
-    
+
     .gallery__text button {
         margin-top: 5rem;
     }
@@ -1150,6 +1149,7 @@ form input {
     }
 
     .gallery2__block_active {
+        height: 29.25rem;
         border-radius: 1.25rem;
         width: 100%;
         padding: 2rem;
@@ -1157,6 +1157,7 @@ form input {
 
     .gallery2__block_active img {
         border-radius: 1.25rem;
+        width: 100%;
     }
 
     .gallery2__block {
@@ -1227,7 +1228,11 @@ form input {
         line-height: 2.06rem;
         letter-spacing: 0%;
         text-align: left;
+        padding-bottom: 2rem;
 
+    }
+    .gallery3__buttons{
+        display: none;
     }
 
     .gallery3__text {
@@ -1294,6 +1299,13 @@ form input {
         font-size: 3rem;
     }
 
+    .delivery {
+        padding-top: 5rem;
+    }
+
+    .faq {
+        padding-top: 5rem;
+    }
 
 
 }
