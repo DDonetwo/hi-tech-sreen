@@ -228,6 +228,7 @@ u {
     display: flex;
     gap: 2rem;
     margin-top: 1rem;
+    flex-wrap: wrap;
 }
 
 .advantage_itembig {
@@ -254,6 +255,11 @@ u {
     height: 5.63rem;
     width: 5.63rem;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .advantage_itembig .button__circle {
@@ -310,6 +316,10 @@ u {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.advantage__button img {
+    width: 0.7rem;
 }
 
 .advantage_item {
@@ -872,7 +882,9 @@ form input {
 .button__circle_gray {
     box-sizing: border-box;
     border: 0.13rem solid rgb(160, 160, 160);
-    ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: rgba(217, 217, 217, 0);
     height: 5.63rem;
     width: 5.63rem;
@@ -910,8 +922,194 @@ form input {
     .hero__title {
         font-size: 3.2rem;
     }
-    .hero__relative div{
-        font-size: 0.8rem;
+
+    .hero__relative div {
+        font-size: 1rem;
+        padding: 0.5rem;
     }
 
+    .list_1 {
+        top: -1rem;
+        right: 24rem;
+    }
+
+    .list_2 {
+        top: 7rem;
+        left: 21rem;
+    }
+
+    .list_3 {
+        bottom: 6.5rem;
+        left: 33rem;
+    }
+
+    .hero {
+        padding-top: 1.6rem;
+    }
+
+    .hero__img {
+        height: 33rem;
+        margin: 0.7rem;
+    }
+
+    .hero__text-bottom p {
+        display: none;
+    }
+
+    .button__circle-black {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .button__circle-black img {
+        width: 0.7rem;
+    }
+
+    .button__black {
+        padding: 0.1rem 1rem;
+    }
+
+    .hero__text-bottom {
+        bottom: 0;
+    }
+
+    .title {
+        font-size: 2rem;
+        max-width: 100%;
+    }
+
+    .block1 {
+        margin-top: 5rem;
+    }
+
+    u {
+        text-underline-offset: 0.5rem;
+    }
+
+    .button__gray {
+        padding: 0.1rem 1rem;
+    }
+
+    .button__gray_circle {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .button__gray_circle img {
+        width: 0.7rem;
+    }
+
+    .advantage_itembig {
+        border-radius: 1.25rem;
+        width: 100%;
+        height: 30rem;
+        background-image: url(asset/advantage1\ small.png);
+        padding: 3rem 8rem 2rem 8rem;
+    }
+
+    .advantage_item {
+        height: 30rem;
+        border-radius: 1.25rem;
+        width: 47%;
+    }
+
+    .advantage_item img {
+        border-radius: 1.25rem;
+        width: 100%;
+    }
+
+    .advantage_item h2 {
+        font-size: 2rem;
+    }
+
+    .button__circle {
+        width: 5rem;
+        height: 5rem;
+
+    }
+
+    .button__circle img {
+        width: 1rem;
+    }
+
+    .advantage_itembig-text {
+        border-radius: 1.25rem;
+    }
+
+    .advantage_itembig h2 {
+        font-size: 2.5rem;
+    }
+
+    .gallery__img {
+        height: 30rem;
+        border-radius: 1.25rem;
+        width: 47%;
+    }
+
+    
+    .gallery__img img{
+        height: 30rem;
+        border-radius: 1.25rem;
+        width: 100%;
+    }
+
+    .button__black-border {
+        height: 5rem;
+
+    }
+
+    .gallery .button__black-border {
+        width: 70%;
+    }
+
+    .button__circle_gray {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .button__circle_gray img {
+        width: 1rem;
+    }
+
+    .product .gallery {
+        gap: 2rem;
+    }
+
+    .gallery__text h2 {
+        font-size: 2rem;
+    }
+
+    .gallery__text ul {
+        font-size: 1.3rem;
+    }
+    .gallery__buttons{
+        justify-content: start;
+        width: 100%;
+    }
+    .gallery2__block_active{
+        border-radius: 1.25rem;
+        width: 100%;
+        padding: 2rem;
+    }
+    .gallery2__block_active img{
+        border-radius: 1.25rem; 
+    }
+    .gallery2__block{
+        display: none;
+    }
+
+    .gallery2__block-text .gallery2__buttons button {
+        width: 5rem;
+        height: 5rem;
+    }
+    .gallery2__block-text .gallery2__buttons button img {
+        width: 1rem;
+    }
+
+    .gallery2__block-text h2{
+        font-size: 2rem;
+    }
+    .gallery2__block-text p{
+        font-size: 1.3rem;
+    }
 }
