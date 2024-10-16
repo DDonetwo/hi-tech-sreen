@@ -1188,4 +1188,54 @@ form input {
     .faq__item p {
         font-size: 1.6rem;
     }
+    .about{
+        padding-top: 9rem;
+    }
+
+    .four__block {
+        padding-top: 4rem
+    }
+
+    .four__block li div {
+        font-size: 1.2rem;
+    }
+
+    .four__block li img {
+        height: 8rem;
+        border-radius: 1.25rem;
+
+    }
+
+    .bg__white {
+        height: 15rem;
+        border-radius: 1.25rem;
+    }
+
+    .four__block li p {
+        font-size: 1.5rem;
+    }
+    .footer{
+        padding-top: 12rem;
+    }
+
+    .footer form{
+        flex-direction: column;
+    }
+    form input {
+        width: 100%;
+        height: 5rem;
+    }
+    .privacy{
+        color: rgb(124, 124, 124);
+        width: 45%;  
+    }
+    .send {
+        padding-top: 3rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .send button{
+        width: 45%;
+    }
 }
