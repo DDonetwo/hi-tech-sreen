@@ -14,6 +14,36 @@ u {
     text-underline-offset: 1rem;
 }
 
+/* popup */
+
+.popup__wrapper {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.popup {
+    background-color: #F1F1F1;
+    border-radius: 3.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    width: 45%;
+   
+
+}
+
+.popup__form{
+    display: flex;
+    flex-direction: column; gap: 1rem;
+}
+
 /* header */
 
 .nav {
@@ -1188,7 +1218,8 @@ form input {
     .faq__item p {
         font-size: 1.6rem;
     }
-    .about{
+
+    .about {
         padding-top: 9rem;
     }
 
@@ -1214,29 +1245,34 @@ form input {
     .four__block li p {
         font-size: 1.5rem;
     }
-    .footer{
+
+    .footer {
         padding-top: 12rem;
     }
 
-    .footer form{
+    .footer form {
         flex-direction: column;
     }
+
     form input {
         width: 100%;
         height: 5rem;
     }
-    .privacy{
+
+    .privacy {
         font-size: 1.13rem;
         color: rgb(160, 160, 160);
-        width: 45%;  
+        width: 45%;
     }
+
     .send {
         padding-top: 3rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    .send button{
+
+    .send button {
         width: 45%;
     }
 }
