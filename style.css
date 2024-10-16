@@ -945,6 +945,13 @@ form input {
 }
 
 @media screen and (max-width: 600px) {
+    .gallery__text {
+        width: 48%;
+    }
+    
+    .gallery__text button {
+        margin-top: 5rem;
+    }
 
     .popup {
         width: 90%;
@@ -1003,7 +1010,7 @@ form input {
     }
 
     .hero__img {
-        height: 33rem;
+        height: 28rem;
         margin: 0.7rem;
     }
 
@@ -1038,7 +1045,7 @@ form input {
     }
 
     u {
-        text-underline-offset: 0.5rem;
+        text-underline-offset: 0.7rem;
     }
 
     .button__gray {
@@ -1058,7 +1065,6 @@ form input {
         border-radius: 1.25rem;
         width: 100%;
         height: 30rem;
-        background-image: url(asset/advantage1\ small.png);
         padding: 3rem 8rem 2rem 8rem;
     }
 
@@ -1131,7 +1137,7 @@ form input {
     }
 
     .gallery__text h2 {
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
 
     .gallery__text ul {
