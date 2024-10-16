@@ -1046,8 +1046,8 @@ form input {
         width: 47%;
     }
 
-    
-    .gallery__img img{
+
+    .gallery__img img {
         height: 30rem;
         border-radius: 1.25rem;
         width: 100%;
@@ -1082,19 +1082,23 @@ form input {
     .gallery__text ul {
         font-size: 1.3rem;
     }
-    .gallery__buttons{
+
+    .gallery__buttons {
         justify-content: start;
         width: 100%;
     }
-    .gallery2__block_active{
+
+    .gallery2__block_active {
         border-radius: 1.25rem;
         width: 100%;
         padding: 2rem;
     }
-    .gallery2__block_active img{
-        border-radius: 1.25rem; 
+
+    .gallery2__block_active img {
+        border-radius: 1.25rem;
     }
-    .gallery2__block{
+
+    .gallery2__block {
         display: none;
     }
 
@@ -1102,14 +1106,86 @@ form input {
         width: 5rem;
         height: 5rem;
     }
+
     .gallery2__block-text .gallery2__buttons button img {
         width: 1rem;
     }
 
-    .gallery2__block-text h2{
+    .gallery2__block-text h2 {
         font-size: 2rem;
     }
-    .gallery2__block-text p{
+
+    .gallery2__block-text p {
         font-size: 1.3rem;
+    }
+
+    .subtitle {
+        font-size: 1.3rem;
+    }
+
+    .gallery3__block {
+        flex-direction: column;
+        gap: 1rem;
+        outline: 0rem solid rgb(124, 124, 124);
+        outline-offset: -0.19rem;
+        border-top-right-radius: 3.75rem;
+        border-bottom-right-radius: 3.75rem;
+        border-top-left-radius: 25rem;
+        border-bottom-left-radius: 20rem;
+    }
+
+    .gallery3 {
+        flex-direction: column;
+        padding-top: 3rem;
+    }
+
+    .gallery3 img {
+        width: 100%;
+    }
+
+    .gallery3__buttons {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    .gallery3__buttons button img {
+        width: 1rem;
+    }
+
+    .gallery3__text {
+        padding: 3rem;
+    }
+
+    .gallery3__text button {
+        height: 5rem;
+    }
+
+    .gallery3__text p {
+        font-size: 1.3rem;
+        font-weight: 600;
+        line-height: 2.06rem;
+        letter-spacing: 0%;
+        text-align: left;
+
+    }
+
+    .gallery3__text {
+        height: 100%;
+    }
+
+    .faq__item {
+        padding: 2rem 0rem;
+    }
+
+    .faq__item h3 {
+        font-size: 1.6rem;
+    }
+
+    .faq__item div {
+        width: 80%;
+    }
+
+    .faq__item p {
+        font-size: 1.6rem;
     }
 }
