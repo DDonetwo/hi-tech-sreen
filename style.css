@@ -28,20 +28,30 @@ u {
 }
 
 .popup {
+    width: 40%;
     background-color: #F1F1F1;
     border-radius: 3.75rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-    width: 45%;
-   
+    align-items: end;
+    padding: 2rem 3rem 3rem 3rem;
 
 }
 
-.popup__form{
+.popup__form {
     display: flex;
-    flex-direction: column; gap: 1rem;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.privacy {
+    font-size: 1.13rem;
+    color: rgb(160, 160, 160);
+    width: 48%;
+}
+
+.send button {
+    width: 48%;
 }
 
 /* header */
@@ -900,6 +910,13 @@ form input {
     flex: 2;
 }
 
+.send {
+    padding-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .footer__bottom .container {
     padding-top: 10rem;
     display: flex;
@@ -928,6 +945,14 @@ form input {
 }
 
 @media screen and (max-width: 600px) {
+
+    .popup {
+        width: 90%;
+        border-radius: 1.25rem;
+        padding: 2rem 2rem 4rem 2rem;
+
+    }
+
     html {
         font-size: 12px;
     }
@@ -1259,22 +1284,12 @@ form input {
         height: 5rem;
     }
 
-    .privacy {
-        font-size: 1.13rem;
-        color: rgb(160, 160, 160);
-        width: 45%;
+    .popup__title {
+        font-size: 3rem;
     }
 
-    .send {
-        padding-top: 3rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
 
-    .send button {
-        width: 45%;
-    }
+
 }
 
 @media screen and (max-width: 450px) {
