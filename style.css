@@ -9,9 +9,11 @@ body {
     color: #181818;
     background-color: #F1F1F1;
 }
+
 button {
     background: none;
 }
+
 u {
     text-underline-offset: 1rem;
 }
@@ -27,6 +29,10 @@ u {
     justify-content: center;
     align-items: center;
     display: none;
+}
+
+.button__menu img {
+    width: 2.5rem;
 }
 
 .popup {
@@ -238,7 +244,7 @@ u {
 }
 
 .button__gray {
-    color:#181818;
+    color: #181818;
     box-sizing: border-box;
     border: 0.13rem solid rgb(206, 206, 206);
     border-radius: 3.13rem;
@@ -359,7 +365,7 @@ u {
     display: flex;
     align-items: center;
     justify-content: center;
-    color:#181818;
+    color: #181818;
 }
 
 .advantage__button img {
@@ -411,6 +417,9 @@ u {
     font-size: 1.25rem;
     font-weight: 400;
     padding: 0.6rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .button__circle-black {
@@ -987,7 +996,7 @@ form input {
     }
 
     .nav {
-        padding: 1rem 0rem;
+        padding: 2rem 0rem;
     }
 
     .container {
@@ -1076,9 +1085,11 @@ form input {
     }
 
     .advantage_itembig {
+        background-image: url(/asset/advantage1\ small.png);
+
         border-radius: 1.25rem;
         width: 100%;
-        height: 25rem;
+        height: 24rem;
         padding: 2rem 3rem 2rem 3rem;
     }
 
@@ -1132,6 +1143,7 @@ form input {
 
 
     .gallery__img img {
+
         height: 28rem;
         border-radius: 1.25rem;
         width: 100%;
@@ -1162,6 +1174,7 @@ form input {
 
     .gallery__text h2 {
         font-size: 1.7rem;
+        padding-bottom: 0rem;
     }
 
     .gallery__text {
@@ -1173,6 +1186,7 @@ form input {
     }
 
     .gallery__buttons {
+        margin-top: 0rem;
         justify-content: end;
         width: 100%;
     }
@@ -1186,11 +1200,24 @@ form input {
         gap: 0;
     }
 
-    .gallery2__block_active img {
+    .gallery__img {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .gallery2__img img {
         border-radius: 1.25rem;
         width: 100%;
-        height: 20rem;
+        height: 30rem;
+        object-fit: cover;
+        object-position: top;
+
     }
+
 
     .gallery2__block {
         display: none;
@@ -1221,12 +1248,12 @@ form input {
     .gallery3__block {
         flex-direction: column;
         gap: 1rem;
-        outline: 0rem solid rgb(124, 124, 124);
+        outline: 0.15rem solid rgb(124, 124, 124);
         outline-offset: -0.19rem;
-        border-top-right-radius: 3.75rem;
-        border-bottom-right-radius: 3.75rem;
-        border-top-left-radius: 25rem;
-        border-bottom-left-radius: 20rem;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 1.75rem;
+        border-bottom-right-radius: 1.75rem;
     }
 
     .gallery3 {
@@ -1257,7 +1284,7 @@ form input {
     }
 
     .gallery3__text p {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         font-weight: 600;
         line-height: 2.06rem;
         letter-spacing: 0%;
@@ -1305,6 +1332,7 @@ form input {
 
     .four__block li {
         width: 46%;
+
     }
 
     .four__block li div {
@@ -1317,9 +1345,9 @@ form input {
     }
 
     .bg__white {
+        width: 46%;
         height: 12rem;
         border-radius: 1.25rem;
-        flex: 1rem;
         padding: 1rem;
     }
 
