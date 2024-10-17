@@ -9,7 +9,9 @@ body {
     color: #181818;
     background-color: #F1F1F1;
 }
-
+button {
+    background: none;
+}
 u {
     text-underline-offset: 1rem;
 }
@@ -236,6 +238,7 @@ u {
 }
 
 .button__gray {
+    color:#181818;
     box-sizing: border-box;
     border: 0.13rem solid rgb(206, 206, 206);
     border-radius: 3.13rem;
@@ -356,6 +359,7 @@ u {
     display: flex;
     align-items: center;
     justify-content: center;
+    color:#181818;
 }
 
 .advantage__button img {
@@ -449,7 +453,7 @@ u {
     display: flex;
     align-items: end;
     gap: 4rem;
-
+    flex-direction: row;
 }
 
 
@@ -457,7 +461,6 @@ u {
     width: 56.25rem;
     height: 36.06rem;
     border-radius: 3.13rem;
-
 }
 
 .gallery__text {
@@ -465,7 +468,6 @@ u {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
 }
 
 .gallery__img img {
@@ -549,7 +551,7 @@ u {
     width: 58%;
     background-color: #FFFFFF;
     border-radius: 3.13rem;
-    height: 36.25rem;
+    height: 100%;
     padding: 3rem;
     display: flex;
     gap: 3rem;
@@ -563,7 +565,7 @@ u {
 }
 
 .gallery2__block-text {
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -942,14 +944,21 @@ form input {
     font-weight: 400;
     color: rgb(160, 160, 160);
 }
+
 .big {
     display: flex;
 }
-.small{
+
+.small {
     display: none;
 }
 
 @media screen and (max-width: 600px) {
+
+    .commercia {
+        padding-top: 5rem;
+    }
+
     .gallery__text {
         width: 48%;
     }
@@ -1069,12 +1078,12 @@ form input {
     .advantage_itembig {
         border-radius: 1.25rem;
         width: 100%;
-        height: 30rem;
-        padding: 3rem 8rem 2rem 8rem;
+        height: 25rem;
+        padding: 2rem 3rem 2rem 3rem;
     }
 
     .advantage_item {
-        height: 30rem;
+        height: 25rem;
         border-radius: 1.25rem;
         width: 47%;
     }
@@ -1102,19 +1111,28 @@ form input {
         border-radius: 1.25rem;
     }
 
+    .advantage_item button {
+        margin-top: 1rem;
+    }
+
+    .py-3 {
+        padding: 0.5rem 0rem;
+    }
+
     .advantage_itembig h2 {
-        font-size: 2.5rem;
+        font-size: 2rem;
+        line-height: 130%;
     }
 
     .gallery__img {
-        height: 30rem;
+        height: 28rem;
         border-radius: 1.25rem;
-        width: 47%;
+        width: 100%;
     }
 
 
     .gallery__img img {
-        height: 30rem;
+        height: 28rem;
         border-radius: 1.25rem;
         width: 100%;
     }
@@ -1125,7 +1143,7 @@ form input {
     }
 
     .gallery .button__black-border {
-        width: 70%;
+        width: 100%;
     }
 
     .button__circle_gray {
@@ -1139,10 +1157,15 @@ form input {
 
     .product .gallery {
         gap: 2rem;
+        flex-direction: column;
     }
 
     .gallery__text h2 {
         font-size: 1.7rem;
+    }
+
+    .gallery__text {
+        width: 100%;
     }
 
     .gallery__text ul {
@@ -1150,20 +1173,23 @@ form input {
     }
 
     .gallery__buttons {
-        justify-content: start;
+        justify-content: end;
         width: 100%;
     }
 
     .gallery2__block_active {
-        height: 29.25rem;
+        height: 100%;
         border-radius: 1.25rem;
         width: 100%;
         padding: 2rem;
+        flex-direction: column;
+        gap: 0;
     }
 
     .gallery2__block_active img {
         border-radius: 1.25rem;
         width: 100%;
+        height: 20rem;
     }
 
     .gallery2__block {
@@ -1181,6 +1207,7 @@ form input {
 
     .gallery2__block-text h2 {
         font-size: 2rem;
+        padding-bottom: 2rem;
     }
 
     .gallery2__block-text p {
@@ -1226,6 +1253,7 @@ form input {
 
     .gallery3__text button {
         height: 5rem;
+        width: 100%;
     }
 
     .gallery3__text p {
@@ -1263,11 +1291,20 @@ form input {
     }
 
     .about {
-        padding-top: 9rem;
+        padding-top: 5rem;
     }
 
     .four__block {
         padding-top: 4rem
+    }
+
+    .four__block ul {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .four__block li {
+        width: 46%;
     }
 
     .four__block li div {
@@ -1275,14 +1312,19 @@ form input {
     }
 
     .four__block li img {
-        height: 8rem;
+        height: 10rem;
         border-radius: 1.25rem;
-
     }
 
     .bg__white {
-        height: 15rem;
+        height: 12rem;
         border-radius: 1.25rem;
+        flex: 1rem;
+        padding: 1rem;
+    }
+
+    .bg__white p {
+        padding-bottom: 0rem;
     }
 
     .four__block li p {
