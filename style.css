@@ -102,8 +102,6 @@ u {
     margin: auto;
 }
 
-
-
 .nav__links li {
     font-size: 1.25rem;
     font-weight: 600;
@@ -162,6 +160,10 @@ u {
     position: absolute;
 }
 
+.hero__relative {
+    position: relative;
+}
+
 .hero__relative div {
     display: flex;
     justify-content: center;
@@ -175,29 +177,71 @@ u {
 }
 
 .list_1 {
+    width: 17rem;
+    top: 2rem;
+    left: 4rem;
     position: absolute;
-    top: 1rem;
-    right: 8rem;
+    animation: Orbita1 45s cubic-bezier(0.42, 0, 0.58, 1) infinite;
 
 }
-
 
 .list_2 {
     position: absolute;
-    top: 6rem;
-    left: 6rem;
-    }
+    bottom: -3rem;
+    left: 46rem;
+    animation: Orbita2 48s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+    transition: 1s ease-in-out;
+}
 
 .list_3 {
     position: absolute;
-    bottom: -1.5rem;
-    left: 46rem;
+    top: 1.5rem;
+    right: 5rem;
+    animation: Orbita3 100s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+}
+.list_1:hover {
+    animation-duration: 10s; /* Ускоряем анимацию при наведении */
+    transform: scale(1.05); /* Увеличиваем элемент при наведении для эффекта отскока */
+  }
+  .list_2:hover {
+    animation-duration: 10s; /* Ускоряем анимацию при наведении */
+    transform: scale(1.05); /* Увеличиваем элемент при наведении для эффекта отскока */
+  }
+  .list_3:hover {
+    animation-duration: 10s; /* Ускоряем анимацию при наведении */
+    transform: scale(1.05); /* Увеличиваем элемент при наведении для эффекта отскока */
+  }
+
+  
+@keyframes Orbita1 {
+    from {
+        transform: rotate(0deg) translateX(30px) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translateX(30px) rotate(-360deg);
+    }
 }
 
-.hero__relative {
-    position: relative;
+@keyframes Orbita2 {
+    from {
+        transform: rotate(0deg) translateX(20px) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translateX(20px) rotate(-360deg);
+    }
 }
 
+@keyframes Orbita3 {
+    from {
+        transform: rotate(0deg) translateX(25px) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translateX(25px) rotate(-360deg);
+    }
+}
 .hero__title {
     padding: 1rem;
     font-size: 5.38rem;
@@ -232,6 +276,7 @@ u {
     width: 100%;
     height: 100%;
 }
+
 
 /* block1 */
 .block1 {
