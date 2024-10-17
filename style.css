@@ -124,6 +124,7 @@ u {
     background-color: white;
     padding: 0.5rem 0.5rem 0.5rem 1rem;
     border-radius: 3.13rem;
+    transition: 0.4s ease-in-out;
 }
 
 .nav__button div {
@@ -134,6 +135,16 @@ u {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.4s ease-in-out;
+}
+
+.nav__button:hover {
+    box-shadow: 0 0 0 2px #F1F1F1, 0 0 0 4px #181818;
+
+}
+
+.nav__button:hover div {
+    transform: rotate(45deg);
 }
 
 .button__menu {
@@ -175,7 +186,7 @@ u {
     position: absolute;
     top: 6rem;
     left: 6rem;
-}
+    }
 
 .list_3 {
     position: absolute;
@@ -301,15 +312,32 @@ u {
     box-sizing: border-box;
     border: 0.13rem solid #181818;
     background: rgba(217, 217, 217, 0);
+    /* Прозрачный фон по умолчанию */
     height: 5.63rem;
     width: 5.63rem;
     border-radius: 50%;
     display: flex;
     justify-content: center;
-    display: flex;
-    justify-content: center;
     align-items: center;
+    transition: 0.5s ease-in-out, filter 0.4s ease-in-out;
+    /* Плавный переход */
 }
+
+.button__circle:hover {
+    background: #181818;
+    /* Черный фон при наведении */
+}
+
+.button__circle img {
+    transition: filter 0.4s ease-in-out;
+    /* Плавный переход для фильтра */
+}
+
+.button__circle:hover img {
+    filter: invert(1);
+    /* Инвертировать цвет стрелки, делая её белой */
+}
+
 
 .advantage_itembig .button__circle {
     position: absolute;
@@ -353,6 +381,19 @@ u {
     width: 25.38rem;
 }
 
+.button__blocks:hover .advantage__button {
+    background: #181818;
+    color: #F1F1F1;
+}
+
+
+
+.button__blocks:hover .advantage__button {
+    background: #181818;
+    color: #F1F1F1;
+}
+
+
 .advantage__button {
     border-radius: 3.13rem;
     background: rgba(255, 255, 255, 0.5);
@@ -363,13 +404,18 @@ u {
     line-height: 1.69rem;
     align-items: center;
     display: flex;
-    align-items: center;
     justify-content: center;
     color: #181818;
+    transition: 0.4s ease-in-out, color 0.4s ease-in-out;
 }
 
 .advantage__button img {
     width: 0.7rem;
+    transition: filter 0.4s ease-in-out;
+}
+
+.button__blocks:hover .advantage__button img {
+    filter: invert(1);
 }
 
 .advantage_item {
@@ -410,6 +456,16 @@ u {
     margin-top: 4rem;
 }
 
+.button__blocks:hover .button__circle-black {
+    background: rgb(124, 124, 124);
+    transform: rotate(45deg);
+}
+
+.button__blocks:hover .button__black {
+    box-shadow: 0 0 0 2px white, 0 0 0 4px #181818;
+}
+
+
 .button__black {
     border-radius: 3.13rem;
     background: #181818;
@@ -420,7 +476,13 @@ u {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.4s ease-in-out;
 }
+
+.button__black:hover {
+    box-shadow: 0 0 0 2px white, 0 0 0 4px #181818;
+}
+
 
 .button__circle-black {
     border-radius: 50%;
@@ -430,6 +492,7 @@ u {
     justify-content: center;
     align-items: center;
     display: flex;
+    transition: 0.4s ease-in-out;
 }
 
 .button__circle-black img {
@@ -522,6 +585,13 @@ u {
     align-items: center;
     justify-content: center;
     height: 5.63rem;
+    transition: 0.4s ease-in-out;
+
+}
+
+.button__black-border:hover {
+    background: #181818;
+    color: #FFFFFF;
 }
 
 .gallery__text ul li b {
@@ -535,7 +605,7 @@ u {
     margin-top: 2.5rem;
     display: flex;
     gap: 1rem;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
 }
@@ -564,6 +634,7 @@ u {
     padding: 3rem;
     display: flex;
     gap: 3rem;
+
 }
 
 
@@ -702,7 +773,38 @@ u {
     text-align: center;
     padding: 0.6rem 1rem;
     width: 70%;
+    transition: 0.5s ease-in-out;
 
+}
+
+.gallery2__buttons button img {
+    filter: invert(0);
+    /* По умолчанию предполагаем, что изображение белое */
+    transition: filter 0.4s ease;
+    /* Плавный переход для фильтра */
+}
+
+.gallery2__block:hover button {
+    background: white;
+    color: #181818;
+}
+
+.gallery2__buttons {
+    transition: 0.5s ease-in-out
+}
+
+.gallery2__buttons:hover {
+    color: rgb(122, 122, 122)
+}
+
+.gallery2__buttons:hover button {
+    background: transparent;
+    border: 0.13rem solid #181818;
+}
+
+.gallery2__buttons:hover button img {
+    filter: invert(1);
+    /* Изменяем на черный при наведении */
 }
 
 .gallery2__block h2 {
@@ -939,13 +1041,32 @@ form input {
 .button__circle_gray {
     box-sizing: border-box;
     border: 0.13rem solid rgb(160, 160, 160);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background: rgba(217, 217, 217, 0);
     height: 5.63rem;
     width: 5.63rem;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease-in-out, 0.4s ease-in-out;
+}
+
+.button__circle_gray:hover {}
+
+.button__circle_gray img {
+    transition: 0.4s ease-in-out;
+}
+
+.button__circle_gray img {
+    filter: invert(0);
+    /* Исходное состояние (серая стрелка) */
+    transition: filter 0.4s ease;
+    /* Плавный переход для фильтра */
+}
+
+.button__circle_gray:hover img {
+    filter: invert(1);
+    /* Изменяем на белую стрелку при наведении */
 }
 
 .footer__bottom {
@@ -1189,6 +1310,7 @@ form input {
         margin-top: 0rem;
         justify-content: end;
         width: 100%;
+        display: flex;
     }
 
     .gallery2__block_active {
