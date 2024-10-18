@@ -100,6 +100,7 @@ u {
 .container {
     width: 1539px;
     margin: auto;
+    padding: 0rem 2rem;
 }
 
 .nav__links li {
@@ -181,38 +182,58 @@ u {
     top: 2rem;
     left: 4rem;
     position: absolute;
-    animation: Orbita1 45s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+    animation: Orbita1 25s cubic-bezier(0.42, 0, 0.58, 1) infinite;
 
 }
 
 .list_2 {
+    width: 15rem;
     position: absolute;
     bottom: -3rem;
     left: 46rem;
-    animation: Orbita2 48s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+    animation: Orbita2 30s cubic-bezier(0.42, 0, 0.58, 1) infinite;
     transition: 1s ease-in-out;
 }
 
 .list_3 {
+    width: 17rem;
     position: absolute;
     top: 1.5rem;
     right: 5rem;
-    animation: Orbita3 100s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+    animation: Orbita3 35s cubic-bezier(0.42, 0, 0.58, 1) infinite;
 }
-.list_1:hover {
-    animation-duration: 10s; /* Ускоряем анимацию при наведении */
-    transform: scale(1.05); /* Увеличиваем элемент при наведении для эффекта отскока */
-  }
-  .list_2:hover {
-    animation-duration: 10s; /* Ускоряем анимацию при наведении */
-    transform: scale(1.05); /* Увеличиваем элемент при наведении для эффекта отскока */
-  }
-  .list_3:hover {
-    animation-duration: 10s; /* Ускоряем анимацию при наведении */
-    transform: scale(1.05); /* Увеличиваем элемент при наведении для эффекта отскока */
-  }
 
-  
+@keyframes Orbita1-small {
+    from {
+        transform: rotate(0deg) translateX(10px) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translateX(10px) rotate(-360deg);
+    }
+}
+
+
+@keyframes Orbita2-small {
+    from {
+        transform: rotate(0deg) translateX(5px) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translateX(5px) rotate(-360deg);
+    }
+}
+
+@keyframes Orbita3-small {
+    from {
+        transform: rotate(0deg) translateX(5px) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translateX(5px) rotate(-360deg);
+    }
+}
+
 @keyframes Orbita1 {
     from {
         transform: rotate(0deg) translateX(30px) rotate(0deg);
@@ -242,6 +263,7 @@ u {
         transform: rotate(360deg) translateX(25px) rotate(-360deg);
     }
 }
+
 .hero__title {
     padding: 1rem;
     font-size: 5.38rem;
@@ -337,7 +359,7 @@ u {
 }
 
 .advantage_itembig {
-    width: 38rem;
+    width: 43%;
     height: 31rem;
     background-image: url(./asset/advantage1.png);
     background-position: center;
@@ -464,7 +486,7 @@ u {
 }
 
 .advantage_item {
-    width: 26.63rem;
+    width: 26%;
     height: 31rem;
     background-color: #FFFFFF;
     border-radius: 3.75rem;
@@ -1032,6 +1054,7 @@ u {
 .four__block li button {}
 
 .bg__white {
+    padding: 1rem;
     background-color: #FFFFFF;
     border-radius: 3.13rem;
     height: 29.63rem;
@@ -1180,18 +1203,24 @@ form input {
     }
 
     .list_1 {
-        top: -1rem;
-        right: 24rem;
+        width: 14rem;
+        top: -0.5rem;
+        left: 0;
+        animation: Orbita1-small 25s cubic-bezier(0.42, 0, 0.58, 1) infinite;
     }
 
     .list_2 {
-        top: 7rem;
-        left: 21rem;
+        width: 14rem;
+        left: 15rem;
+        bottom: -1rem;
+        animation: Orbita2-small 30s cubic-bezier(0.42, 0, 0.58, 1) infinite;
     }
 
     .list_3 {
-        bottom: 6.5rem;
-        left: 23rem;
+        width: 14rem;
+        top: 0;
+        right: 0rem;
+        animation: Orbita3-small 35s cubic-bezier(0.42, 0, 0.58, 1) infinite;
     }
 
     .hero {
