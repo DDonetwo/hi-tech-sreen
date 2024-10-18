@@ -36,7 +36,7 @@ u {
 }
 
 .popup {
-    width: 40%;
+    width: 30%;
     background-color: #F1F1F1;
     border-radius: 3.75rem;
     display: flex;
@@ -45,7 +45,9 @@ u {
     padding: 2rem 3rem 3rem 3rem;
 
 }
-
+.popup__form .send{
+    margin-top: 3rem;
+}
 .popup__form {
     display: flex;
     flex-direction: column;
@@ -81,7 +83,7 @@ u {
 
 .header__logo {
     font-size: 1.25rem;
-    font-weight: 800;
+    font-weight: 900;
     line-height: 110%;
     letter-spacing: 0%;
     text-align: center;
@@ -286,7 +288,7 @@ u {
     right: 0;
     display: flex;
     align-items: center;
-    gap: 4rem;
+    gap: 2rem;
 }
 
 .hero__text-bottom p {
@@ -348,7 +350,8 @@ u {
     text-align: center;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
+    transition: 0.4s ease-in-out;
 }
 
 .advantage {
@@ -1119,7 +1122,10 @@ form input {
     transition: 0.5s ease-in-out, 0.4s ease-in-out;
 }
 
-.button__circle_gray:hover {}
+.button__circle_gray:hover {
+    background: rgba(255, 255, 255, 1);
+    backdrop-filter: blur(0.1rem);
+}
 
 .button__circle_gray img {
     transition: 0.4s ease-in-out;
@@ -1151,6 +1157,24 @@ form input {
     display: none;
 }
 
+.closeform img {
+    width: 1.6rem;
+}
+
+.closeform:hover {
+    opacity: 0.5;
+}
+
+.button__blocks:hover .button__gray_circle{
+    transform: rotate(45deg);
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(0.1rem);
+}
+
+.button__blocks:hover  .button__gray{
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(0.1rem);
+}
 @media screen and (max-width: 600px) {
 
     .commercia {
@@ -1268,15 +1292,18 @@ form input {
 
     .button__gray {
         padding: 0.1rem 1rem;
+        transition: 0.4s ease-in-out;
     }
 
     .button__gray_circle {
         width: 2rem;
         height: 2rem;
+        transition: 0.4s ease-in-out;
     }
 
     .button__gray_circle img {
         width: 0.7rem;
+        transition: 0.4s ease-in-out;
     }
 
     .advantage_itembig {
@@ -1565,7 +1592,9 @@ form input {
 
     form input {
         width: 100%;
-        height: 5rem;
+        padding: 1.3rem;
+
+        font-size: 1.3rem;
     }
 
     .popup__title {
