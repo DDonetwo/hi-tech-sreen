@@ -30,14 +30,14 @@
             </form>
         </div>
     </div>
-    <header class="header">
+    <header id="header" class="header">
         <div class="container">
-            <nav class="nav">
+            <nav id="nav" class="nav">
                 <ul class="nav__links start">
-                    <li><a href="">Samsung DC55E</a></li>
-                    <li><a href="">Применение</a></li>
-                    <li><a href="">FAQ</a></li>
-                    <li><a href="">О нас</a></li>
+                    <li><a href="#product">Samsung DC55E</a></li>
+                    <li><a href="#application">Применение</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#about">О нас</a></li>
                 </ul>
                 <a class="header__logo">
                     HI-TECH <br>
@@ -123,7 +123,7 @@
             </div>
         </section>
 
-        <section class="product">
+        <section id="product" class="product">
             <div class="container">
                 <div class="title__center">
                     <button class="button__gray">samsung DC55E</button>
@@ -157,25 +157,29 @@
             </div>
         </section>
 
-        <section class="application">
+        <section id="application" class="application">
             <div class="container">
                 <div class="title__center">
                     <button class="button__gray">применение</button>
                     <h2 class="title">Узнайте больше об универсальности использования мониторов.</h2>
                 </div>
 
-
                 <div class="gallery2">
                     <ul>
-                        <li class="gallery2__block_active">
+                        <li class="gallery2__block gallery2__none img1">
+                            <button>подробнее</button>
+                            <h2>В офиса и бизнес-центрах </h2>
+                        </li>
+                        <li class="gallery2__block_active gallery2__active">
                             <div class="gallery2__img">
                                 <img src="./asset/gallery2.jpg" alt="">
                             </div>
                             <div class="gallery2__block-text">
-                                <h2>В офисах:</h2>
-                                <p>Демонстрация презентаций в высоком качестве;
-                                    Проведение видеоконференций с сотрудниками, работающими удалённо;
-                                    Решение других задач, связанных с трудовой деятельностью.</p>
+                                <h2>В офисах и бизнес-центрах:</h2>
+                                <p>Демонстрация презентаций в высоком качестве;<br>
+                                    Проведение видеоконференций;<br>
+                                    Информирование о расписании работы;
+                                    Демонстрация рекламы партнеров.</p>
                                 <div id="openForm" class="gallery2__buttons">
                                     <div>узнать больше</div>
                                     <button>
@@ -184,14 +188,56 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="gallery2__block">
+
+
+                        <li class="gallery2__block gallery2__active img2">
+                            <button>подробнее</button>
+                            <h2>В медицинских учреждениях</h2>
+                        </li>
+
+                        <li class="gallery2__block_active gallery2__none">
+                            <div class="gallery2__img">
+                                <img src="./asset/gallery2-3.jpg" alt="">
+                            </div>
+                            <div class="gallery2__block-text">
+                                <h2>В медицинских учреждениях:</h2>
+                                <p>Табло для стойки регистрации; <br>
+                                    Отображение результатов обследований; <br>
+                                    Трансляция операций в хирургическом кабинете;
+
+                                </p>
+                                <div id="openForm" class="gallery2__buttons">
+                                    <div>узнать больше</div>
+                                    <button>
+                                        <img src="./asset/Arrow white rigth.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="gallery2__block gallery2__active img3">
                             <button>подробнее</button>
                             <h2>В магазинах и торговых центрах</h2>
                         </li>
-                        <li class="gallery2__block">
-                            <button>подробнее</button>
-                            <h2>В бизнес-центрах</h2>
+
+                        <li class="gallery2__block_active gallery2__none">
+                            <div class="gallery2__img">
+                                <img src="./asset/gallery2-1.jpg" alt="">
+                            </div>
+                            <div class="gallery2__block-text">
+                                <h2>В магазинах и торговых центрах:</h2>
+                                <p>Реклама товаров, услуг, акций и скидок;<br>
+                                    Информирование о расписании работы и расположении отделов.
+                                </p>
+                                <div id="openForm" class="gallery2__buttons">
+                                    <div>узнать больше</div>
+                                    <button>
+                                        <img src="./asset/Arrow white rigth.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
                         </li>
+
                     </ul>
                 </div>
             </div>
@@ -232,7 +278,7 @@
             </div>
         </section>
 
-        <section class="faq">
+        <section id="faq" class="faq">
             <div class="container">
                 <h2 class="title"> Часто задаваемые вопросы</h2>
                 <div class="button__blocks center">
@@ -276,7 +322,7 @@
             </div>
         </section>
 
-        <section class="about">
+        <section id="about" class="about">
             <div class="container">
                 <h2 class="title"> HI-TECH SCREENS — надежный поставщик коммерческих мониторов.</h2>
                 <p class="subtitle">Мы предлагаем высококачественные коммерческие мониторы, cпособные удовлетворить

@@ -67,6 +67,12 @@ u {
 }
 
 /* header */
+.header {
+    position: fixed;
+    z-index: 500;
+    width: 100%;
+    transition: 0.6s ease-in-out;
+}
 
 .nav {
     padding: 2rem 0;
@@ -109,10 +115,27 @@ u {
 
 .nav__links li {
     font-size: 1.25rem;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 120.89%;
     letter-spacing: 0%;
     text-align: center;
+
+}
+
+.nav__links li a {
+    transition: 0.4s ease-in-out;
+}
+
+.scrolled .nav__links li a {
+    color: white;
+}
+
+.scrolled .header__logo {
+    color: white;
+}
+
+.nav__links li:hover a {
+    color: rgb(160, 160, 160);
 }
 
 .nav__button {
@@ -155,6 +178,9 @@ u {
 }
 
 /* main */
+main {
+    padding-top: 10rem;
+}
 
 .hero {
     padding-top: 2.5rem;
@@ -186,7 +212,7 @@ u {
     top: 2rem;
     left: 4rem;
     position: absolute;
-    animation: Orbita1 25s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+    animation: Orbita1 28s cubic-bezier(0.42, 0, 0.58, 1) infinite;
 
 }
 
@@ -581,7 +607,7 @@ u {
 
 /* product */
 .product {
-    padding-top: 6rem;
+    padding-top: 11rem;
 }
 
 .title__center {
@@ -696,7 +722,7 @@ u {
 
 /* application */
 .application {
-    padding-top: 5.5rem;
+    padding-top: 11rem;
 }
 
 .gallery2 ul {
@@ -707,15 +733,16 @@ u {
 }
 
 .gallery2__block_active {
+    height: 38rem;
     width: 58%;
     background-color: #FFFFFF;
     border-radius: 3.13rem;
-    height: 100%;
     padding: 3rem;
     display: flex;
     gap: 3rem;
-
 }
+
+
 
 
 .gallery2__block_active img {
@@ -733,7 +760,7 @@ u {
 }
 
 .gallery2__block-text h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 800;
 }
 
@@ -767,6 +794,7 @@ u {
 }
 
 .gallery2__block {
+    height: 38rem;
     flex: 1;
     background-color: #FFFFFF;
     border-radius: 3.13rem;
@@ -775,6 +803,44 @@ u {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    background-image: url(./asset/gallery2-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+
+}
+
+.img1 {
+    background-image: url(./asset/gallery2-2.jpg);
+}
+
+.img2 {
+    background-image: url(./asset/gallery2-3.jpg);
+}
+
+.img3 {
+    background-image: url(./asset/gallery2-1.jpg);
+}
+
+
+.gallery2__block::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 3.13rem;
+    z-index: 1;
+}
+
+.gallery2__block>* {
+    position: relative;
+    z-index: 2;
 }
 
 .gallery2__buttons button {
@@ -785,63 +851,12 @@ u {
 
 }
 
-.img-1 {
-    background-image: url(./asset/gallery2-1.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.img-2 {
-    background-image: url(./asset/gallery2-2.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.img-1,
-.img-2 {
-    position: relative;
-    /* Устанавливаем относительное позиционирование для родителя */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 3.13rem;
-    overflow: hidden;
-    /* Обрезаем содержимое, выходящее за границы */
-}
-
-/* Затемнение с использованием псевдоэлемента */
-.img-1::before,
-.img-2::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    /* Полупрозрачный черный цвет, можно регулировать интенсивность */
-    border-radius: 3.13rem;
-    z-index: 1;
-    /* Устанавливаем индекс слоя выше фона */
-}
-
-/* Дополнительно стили для текста и кнопок, чтобы они были над затемнением */
-.img-1 button,
-.img-1 h2,
-.img-2 button,
-.img-2 h2 {
-    position: relative;
-    z-index: 2;
-    /* Поднимаем над затемнением */
-}
-
 .gallery2__buttons button img {
     width: 1.3rem;
 }
 
 .gallery2__block button {
+
     border: 0.06rem solid rgb(255, 255, 255);
     border-radius: 3.13rem;
     background: rgba(41, 41, 41, 0);
@@ -889,7 +904,7 @@ u {
 
 .gallery2__block h2 {
     color: rgb(255, 255, 255);
-    font-size: 2.25rem;
+    font-size: 1.6rem;
     font-weight: 700;
     line-height: 2.13rem;
     letter-spacing: 0%;
@@ -899,7 +914,7 @@ u {
 /* commercia  */
 
 .commercia {
-    padding-top: 10rem;
+    padding-top: 11rem;
 }
 
 .subtitle {
@@ -978,7 +993,7 @@ u {
 
 
 .delivery {
-    padding-top: 10rem;
+    padding-top: 11rem;
 }
 
 /* faq */
@@ -1194,8 +1209,19 @@ form input {
     backdrop-filter: blur(0.1rem);
 }
 
+.gallery2__active {
+    display: flex;
+}
+
+.gallery2__none {
+    display: none;
+}
+
 @media screen and (max-width: 600px) {
 
+    main {
+        padding-top: 6rem;
+    }
 
     .commercia {
         padding-top: 5rem;
@@ -1484,7 +1510,7 @@ form input {
     }
 
     .gallery2__block-text h2 {
-        font-size: 2rem;
+        font-size: 1.5rem;
         padding-bottom: 2rem;
     }
 
