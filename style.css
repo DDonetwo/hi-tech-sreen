@@ -680,10 +680,12 @@ u {
     align-items: center;
     justify-content: center;
 }
-.block__small{
+
+.block__small {
     display: none;
 }
-.block__big{
+
+.block__big {
     display: flex;
 }
 
@@ -1064,6 +1066,14 @@ u {
 
 .four__block li button {}
 
+.active {
+    background: #181818;
+}
+
+.active img {
+    filter: invert(1);
+}
+
 .bg__white {
     padding: 1rem;
     background-color: #FFFFFF;
@@ -1185,7 +1195,7 @@ form input {
 }
 
 @media screen and (max-width: 600px) {
-   
+
 
     .commercia {
         padding-top: 5rem;
@@ -1421,14 +1431,17 @@ form input {
         margin-top: 0rem;
         justify-content: end;
         width: 100%;
-        
+
     }
-    .block__big{
+
+    .block__big {
         display: none;
     }
-    .block__small{
+
+    .block__small {
         display: flex;
     }
+
     .gallery2__block_active {
         height: 100%;
         border-radius: 1.25rem;
