@@ -45,9 +45,11 @@ u {
     padding: 2rem 3rem 3rem 3rem;
 
 }
-.popup__form .send{
+
+.popup__form .send {
     margin-top: 3rem;
 }
+
 .popup__form {
     display: flex;
     flex-direction: column;
@@ -350,7 +352,7 @@ u {
     text-align: center;
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
     transition: 0.4s ease-in-out;
 }
 
@@ -675,10 +677,16 @@ u {
     margin-top: 2.5rem;
     display: flex;
     gap: 1rem;
-    display: none;
     align-items: center;
     justify-content: center;
 }
+.block__small{
+    display: none;
+}
+.block__big{
+    display: flex;
+}
+
 
 .gallery .button__black-border {
     width: 55%;
@@ -1165,17 +1173,19 @@ form input {
     opacity: 0.5;
 }
 
-.button__blocks:hover .button__gray_circle{
+.button__blocks:hover .button__gray_circle {
     transform: rotate(45deg);
     background: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(0.1rem);
 }
 
-.button__blocks:hover  .button__gray{
+.button__blocks:hover .button__gray {
     background: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(0.1rem);
 }
+
 @media screen and (max-width: 600px) {
+   
 
     .commercia {
         padding-top: 5rem;
@@ -1411,9 +1421,14 @@ form input {
         margin-top: 0rem;
         justify-content: end;
         width: 100%;
+        
+    }
+    .block__big{
+        display: none;
+    }
+    .block__small{
         display: flex;
     }
-
     .gallery2__block_active {
         height: 100%;
         border-radius: 1.25rem;
